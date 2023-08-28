@@ -69,6 +69,19 @@ function activateEditListeners() {
   })
 }
 // Codigo DOM #5
+// Permite que la acción guardar el nuevo nombre de la tarea cuando decides editar y que impacte el DOM del HTML, acá debes agegar algoritmo de actualizar tarea
+
+function activateSaveListeners() {
+  const saveBtn = document.querySelectorAll('.saveBtn')
+  const inputs = document.querySelectorAll('.input-controller textarea')
+  saveBtn.forEach((sB, i) => {
+    sB.addEventListener('click', () => {
+      // Llamar la función que guarda la actualización la tarea
+    })
+  })
+}
+
+// Codigo DOM #6
 // Esta es la lógica para el botón "cancelar" cuando presionas editar una tarea, inserta este código tal cual, el reto está en saber en qué parte de tu código debes usarlo.
 
 function activateCancelListeners() {
@@ -83,19 +96,6 @@ function activateCancelListeners() {
     })
   })
 }
-// Permite que la acción guardar el nuevo nombre de la tarea cuando decides editar y que impacte el DOM del HTML, acá debes agegar algoritmo de actualizar tarea
-
-function activateSaveListeners() {
-  const saveBtn = document.querySelectorAll('.saveBtn')
-  const inputs = document.querySelectorAll('.input-controller textarea')
-  saveBtn.forEach((sB, i) => {
-    sB.addEventListener('click', () => {
-      // Llamar la función que guarda la actualización la tarea
-    })
-  })
-}
-
-// Codigo DOM #6
 
 //El sistema debe permitir EDITAR o MODIFICAR una tarea.
 
