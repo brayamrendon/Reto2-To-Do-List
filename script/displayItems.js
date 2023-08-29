@@ -62,6 +62,7 @@ function displayItems() {
                     </div>
                   </div>`
   }
+  
   document.querySelector('.todo-list').innerHTML = items
   activateCheckboxListeners()
   activateDeleteListeners()
