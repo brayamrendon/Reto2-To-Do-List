@@ -62,7 +62,7 @@ function displayItems() {
                     </div>
                   </div>`
   }
-  document.querySelector('.todo-list').innerHTML = items
+ document.querySelector('.todo-list').innerHTML = items
   activateCheckboxListeners()
   activateDeleteListeners()
   activateEditListeners()
